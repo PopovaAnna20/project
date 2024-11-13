@@ -5,21 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ветеринарная клиника</title>
 </head>
+
 <body>
     <header> 
+        <img src="images/logotip.png" width="100" alt="">
+        <h1> ВетАльянс</h1>
         <nav>
             <ol>
-                <li><a href="#home">Главная</a></li>
-                <li>Отзывы</li>
-                <li>Наши эксперты</li>
-                <li>Скидки</li>
-                <li>Прайс-лист</li>
-                <li>О нас</li>
-                <li>Контакты</li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Услуги</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="our experts.html">Наши эксперты</a></li>
+                <li><a href="discounts.html">Скидки</a></li>
+                <li><a href="price list.html">Прайс лист</a></li>
+                <li><a href="about us.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ol>
         </nav> 
     </header>
-    <main>Основная информация</main>
-    <footer>Подвал</footer>
+    <main>
+        <section>
+            <h2>Наши преимущества</h2>
+            <ul>
+                <li>Высококлассные врачи</li>
+                <li>Точная диагностика</li>
+                <li>Стационарное лечение</li>
+                <li>Проведение тяжелых операций</li>
+                <li>Собственная лаборатория</li>
+                <li>Ветеринарная скорая</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Популярные услуги</h2>
+            <ul>
+                <li>Узи кошек и собак</li>
+                <p> от 450 рублей</p>
+                <img src="images/usluga1.webp" width="150" alt="">
+                <li>Вакцинация</li> 
+                <p> от 1230 рублей</p>
+                <img src="images/usluga2.webp" width="150" alt="">
+                <li>Кастрация и стирилизация</li>
+                <p> от 1750 рублей</p>
+                <img src="images/usluga3.avif" width="150" alt="">
+            </ul>
+            <button type="button">Смотреть все услуги и цены</button>
+        </section>
+
+        <section>
+            <h2>Акции</h2>
+           <img src="images/skitka1.png" width ="200" alt="">
+           <img src="images/skitka2.png" width ="200" alt="">
+           <img src="images/skitka3.png" width ="200" alt="">
+        </section>
+
+        <section>
+            <h2>Отзывы</h2>
+            <button type="button">Смотреть все отзывы</button>
+        </section>
+
+        <section>
+            <h2>Новости</h2>
+            <ul>
+                <li>Дни рождения клиники</li>
+                <li>Наша учеба</li>
+                <li>Приглашаем студентов на летнюю практику</li>
+            </ul>
+            <button type="button">Смотреть все новости клиники</button>
+        </section>
+
+        <section>
+        <div>
+            <h2> Наши ветеринарные врачи</h2>
+            <div>
+                <img src="images/Vet1.png" width="200" alt="">
+                <p> Зубарева Галина Сергеевна</p>
+                <img src="images/Vet2.png" width="200" alt="">
+                <p> Захарова Светлана Петровна</p>
+                <img src="images/Vet3.png" width="200" alt="">
+                <p> Носкова Лидия Анатольевна</p>
+                <button type="button">Посмотреть всех врачей</button>
+            </div>
+        </div>    
+        </section>
+        
+    </main>
+    
+    <footer>Подвал</footer> 
+    <h2>Войдите в профиль</h2>
+    <div>
+            <button type="button">Войти</button>
+            <button type="button">Регистрация</button>   
+        </div>
+    </section>
+    <!--/ Форма "Войдите в профиль" -->
+    <!-- Форма "Регистрация" -->
+    <section>
+        <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+        <h2>Регистрация</h2>
+        <form action="/" method="post">
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="email" name="email" placeholder="Логин" required>
+            <fieldset>
+                <div>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <span>Минимум 8 символов</span>
+                </div>
+                <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Зарегистрироваться">
+                <button type="button">Отмена</button>
+            </fieldset>
+            <button type="button">У меня уже есть аккаунт</button>
+        </form>
+    </section>
+    <!--/ Форма "Регистрация" -->
+    <!-- Форма "Войти" -->
+    <section>
+        <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+        <h2>Войти</h2>
+        <form action="/" method="post">
+            <input type="email" name="email" placeholder="Логин" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <fieldset>
+                <input type="submit" value="Войти">
+                <button type="button">Отмена</button>
+            </fieldset>
+            <button type="button">У меня еще нет аккаунта</button>
+        </form>
+    </section>
+    <!--/ Форма "Войти" -->
+</div>
+<!--/ Формы -->
 </body>
 </html>
