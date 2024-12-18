@@ -1,0 +1,86 @@
+Страница О нас
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница о нас</title>
+</head>
+<body>
+    <header class="header container"> 
+        <img class="header__logo" src="images/logotip.png" alt="Логотип" width="100" height="100">
+        <h1 class="header__title"> ВетАльянс</h1>
+        <nav class="header__nav">
+            <ol class="header__list">
+                <li class="header__item"><a class="header_item-link header__item-link--active" href="index.html">Главная</a></li>
+                <li class="header__item"><a class="header__item-link" href="catalog.html">Услуги</a></li>
+                <li class="header__item"><a class="header__item-link" href="reviews.html">Отзывы</a></li>
+                <li class="header__item"><a class="header__item-link" href="our-experts.html">Наши эксперты</a></li>
+                <li class="header__item"><a class="header__item-link" href="discounts.html">Скидки</a></li>
+                <li class="header__item"><a class="header__item-link" href="price-list.html">Прайс лист</a></li>
+                <li class="header__item"><a class="header__item-link" href="about-us.html">О нас</a></li>
+                <li class="header__item"><a class="header__item-link" href="contacts.html">Контакты</a></li>
+            </ol>
+        </nav> 
+    </header>
+    <h2>Войдите в профиль</h2>
+    <div>
+            <button class="button button--accent" type="button">Войти</button>
+            <button class="button" type="button">Регистрация</button>   
+        </div>
+    <!--/ Форма "Войдите в профиль" -->
+        <!-- Форма "Регистрация" -->
+        <section class="popup">
+            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title">Регистрация</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="text" name="name" placeholder="Имя" required>
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <fieldset class="form__fieldset">
+                    <div class="form__field-block">
+                        <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                        <span>Минимум 8 символов</span>
+                    </div>
+                    <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
+                        required>
+                </fieldset>
+                <fieldset class="form__buttons">
+                    <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня уже есть аккаунт</button>
+            </form>
+        </section>
+        <!--/ Форма "Регистрация" -->
+        <!-- Форма "Войти" -->
+        <section class="section popup">
+            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title">Войти</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                <fieldset class="form__buttons">
+                    <button class="button button--accent" type="submit">Войти</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня еще нет аккаунта</button>
+            </form>
+        </section>
+        <!--/ Форма "Войти" -->
+        <!--/ Формы -->
+     <!--Основной контент -->
+     <main>
+
+     </main>
+      <!--Основной контент -->
+      
+     <footer>
+
+     </footer>
+
+    
+</body>
+
+</html>
