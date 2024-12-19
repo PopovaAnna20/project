@@ -1,0 +1,66 @@
+/* Контейнер-обертка */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Кнопки */
+.button {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28pt;
+    color: black;
+    
+
+    border: 1px solid #000000;
+    border-radius: 16px;
+    background-color: rgb(146, 237, 255);
+    
+    cursor: pointer; 
+
+}
+
+.button_main {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28pt;
+    color: black;
+    
+
+    border: 1px solid #000000;
+    border-radius: 45px;
+    background-color: rgb(252, 240, 100);
+    text-align: center;
+    width: 300px ;
+    height: 70px;
+    
+    cursor: pointer; 
+
+    min-height: 60px;
+    padding: 12px 20px;
+
+}
+
+.button--accent {
+    color: rgb(0, 0, 0);
+
+    background-color: rgb(146, 237, 255);
+}
+
+.button--link {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 8px;
+
+  border: none;
+  background-color: transparent;
+}
+
+/* Формы */
+.form__field {
+    font-size: 16px;
+
+    background-color: transparent;
+    border: 1px solid rgba(145, 150, 161, 0.4);
+    border-radius: 16px;
+}

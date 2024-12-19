@@ -8,3 +8,6 @@
 @import "footer.css";
 /* Подключение стилей относящихся к main */
 @import "main.css";
+
+/* Подключение универсальных стилей */
+@import "typography.css";

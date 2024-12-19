@@ -1,0 +1,45 @@
+.our-advantages__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.popular-services__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.stocks__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.reviews__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.news__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.doctors__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.our-advantages {
+    display: block;
+}

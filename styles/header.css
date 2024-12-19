@@ -1,0 +1,24 @@
+.header {
+    background-color: rgb(7, 160, 109);
+    color: white;
+    
+}
+
+.header__item-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+.header__item-link--active {
+    font-weight: 600;
+    color: rgb(205, 211, 215) ;
+}
+
+.header__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+
+}
