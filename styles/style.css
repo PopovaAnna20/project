@@ -11,3 +11,5 @@
 
 /* Подключение универсальных стилей */
 @import "typography.css";
+@import "form.css";
+@import "popup.css";
