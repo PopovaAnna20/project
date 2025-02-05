@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,18 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <header class="header container"> 
-        <img class="header__logo" src="images/logotip.png" alt="Логотип" width="100" height="100">
-        <h1 class="header__title"> ВетАльянс</h1>
+    <h1 class="visually-hidden">Страница каталога</h1>
+    <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo" src="images/logotip.png" alt="Логотип" width="100" height="100">
+            <h1 class="header__title"> ВетАльянс</h1>
+        </a>
         <nav class="header__nav">
             <ol class="header__list">
-                <li class="header__item"><a class="header_item-link header__item-link--active" href="index.html">Главная</a></li>
+                <li class="header__item"><a class="header__item-link header__item-link--active"
+                        href="index.html">Главная</a></li>
                 <li class="header__item"><a class="header__item-link" href="catalog.html">Услуги</a></li>
                 <li class="header__item"><a class="header__item-link" href="reviews.html">Отзывы</a></li>
                 <li class="header__item"><a class="header__item-link" href="our-experts.html">Наши эксперты</a></li>
@@ -24,135 +30,149 @@
             </ol>
         </nav>
         <!--/ Навигация -->
-
         <button class="header__login" type="button">
-            <span class="header__login-icon"><img src="images/icon/login.svg" alt="Войти" width="16" height="16"></span>
             <span class="header__login-text">Войти</span>
         </button>
     </header>
- <!--Основной контент -->
-   
- <section id="main-content">
-    <div id="featured">
-        <h3>Услуги и цены</h3>
-        <p >Терапия</p>
-        <table>
-                <tr>
-                    <td>Первичный приём</td>
-                    <td>от 1200 рублей</td>
+    <!--Основной контент -->
+    <main class="main container">
+
+    <section class="therapy" id="main-content">
+        <div class="therapy__div" id="featured">
+            <h3 class="therapy__title">Услуги и цены</h3>
+            <h4 class="therapy__name">Терапия</h4>
+            <table class="therapy__table">
+                <tr class="therapy__colum">
+                    <td class="therapy__row">Первичный приём</td>
+                    <td class="therapy__row">от 1200 рублей</td>
                 </tr>
+            </table>
+            <table class="therapy__table">
+                <tr class="therapy__colum">
+                    <td class="therapy__row">Повторный приём</td>
+                    <td class="therapy__row">950 рублей</td>
+
+                </tr>
+
+            </table>
+            <table class="therapy__table">
+
+                <tr class="therapy__colum">
+                    <td class="therapy__row">Процедурный приём</td>
+                    <td class="therapy__row">370 рублей</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <section class="dermatology">
+        <h4 class="dermatology__name">Дерматология</h4>
+        <table class="dermatology__table">
+            <tr class="dermatology__colum">
+                <td class="dermatology_row">Приём дерматолога</td>
+                <td class="dermatology_row">1500 рублей</td>
+            </tr>
+        </table>
+        <table class="dermatology__table">
+            <tr class="dermatology__colum">
+                <td class="dermatology_row">Диагностика лампой Вуда</td>
+                <td class="dermatology_row">150 рублей</td>
+            </tr>
+        </table>
+        <table class="dermatology__table">
+            <tr class="dermatology__colum">
+                <td class="dermatology_row">Обследование ушей</td>
+                <td class="dermatology_row">170 рублей</td>
+            </tr>
+        </table>
+        <table class="dermatology__table">
+            <tr class="dermatology__colum">
+                <td class="dermatology_row">Отоскопия</td>
+                <td class="dermatology_row">250 рублей</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="surgery">
+        <h4 class="surgery__name">Хирургия</h4>
+        <table class="surgery__table">
+            <tr class="surgery__colum">
+                <td class="surgery__row">Приём хирурга</td>
+                <td class="surgery__row">1500 рублей</td>
+            </tr>
         </table>
         <table>
-        <tr>
-            <td>Повторный приём</td>
-            <td>950 рублей</td>
-        </tr>
+            <tr>
+                <td>Ампутация хвоста</td>
+                <td>от 800 рублей до 2500 рублей</td>
+            </tr>
         </table>
         <table>
-        
-        <tr>
-            <td>Процедурный приём</td>
-            <td>370 рублей</td>
-        </tr>
+            <tr>
+                <td>Миелография</td>
+                <td>3000 рублей</td>
+            </tr>
         </table>
+        <table>
+            <tr>
+                <td>Кесарево сечение. Кошки</td>
+                <td>8900 рублей</td>
+            </tr>
+        </table>
+        <p>Банк крови</p>
+        <table>
+            <tr>
+                <td>Кровь цельная кошка 1 мл</td>
+                <td>94 рубля</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Кровь цельная собака 1 мл</td>
+                <td>9 рублей</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Плазма кошка 1 мл</td>
+                <td>177 рублей</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Плазма собака 1 мл</td>
+                <td>16 рублей</td>
+            </tr>
+        </table>
+    </section>
+</main>
+
+    <!--Основной контент -->
+    <!--Подвал -->
+<footer class="footer container">
+    <div class="footer__section">
+        <h1 class="footer__title"> ВетАльянс</h1>
+        <p class="footer__section-text">Сайт создан Поповой Анной Сергеевной и Фёдоровой Анной Михайловной группа
+            ВТ-21</p>
     </div>
-</section>
 
-<section>
-   <p>Дерматология</p>
-   <table>
-    <tr>
-        <td>Приём дерматолога</td>
-        <td>1500 рублей</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Диагностика лампой Вуда</td>
-        <td>150 рублей</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Обследование ушей</td>
-        <td>170 рублей</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Отоскопия</td>
-        <td>250 рублей</td>
-    </tr>
-   </table>
-</section>
+    <div class="footer__section">
+        <ul class="footer__list">
+            <li class="footer__item"> <a class="footer__item-link" href="#">Пользовательское соглашение</a></li>
+            <li class="footer__item"> <a class="footer__item-link" href="#">Политика конфиденциальности</a></li>
+        </ul>
+    </div>
 
-<section>
-   <p>Хирургия</p>
-   <table>
-    <tr>
-        <td>Приём хирурга</td>
-        <td>1500 рублей</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Ампутация хвоста</td>
-        <td>от 800 рублей до 2500 рублей</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Миелография</td>
-        <td>3000 рублей</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Кесарево сечение. Кошки</td>
-        <td>8900 рублей</td>
-    </tr>
-   </table>
-   <p>Банк крови</p>
-   <table>
-    <tr>
-        <td>Кровь цельная кошка 1 мл</td>
-        <td>94 рубля</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Кровь цельная собака 1 мл</td>
-        <td>9 рублей</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Плазма кошка 1 мл</td>
-        <td>177 рублей</td>
-    </tr>
-   </table>
-   <table>
-    <tr>
-        <td>Плазма собака 1 мл</td>
-        <td>16 рублей</td>
-    </tr>
-   </table>
-</section>
-     <!--Основной контент -->
-     <!-- Формы -->
+    <div class="footer__section">
+        <a class="section__link" href="#">Телеграм</a>
+        <a class="section__link" href="#">Телефон</a>
+        <a class="section__link" href="#">Email</a>
+    </div>
+</footer>
+
+    <!-- Подвал -->
     <div style="display: none" class="dialog dialog--layout">
-        <!-- Форма "Войдите в профиль" -->
-        <section class="popup">
-            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
-                    height="24"></button>
-            <h2 class="popup__title">Войдите в профиль</h2>
-            <p class="popup__desc">Добавлять рецепты могут только зарегистрированные пользователи.</p>
-            <div class="popup__buttons">
-                <button class="button button--accent" type="button">Войти</button>
-                <button class="button" type="button">Регистрация</button>
-            </div>
-        </section>
-    <!--/ Форма "Войдите в профиль" -->
         <!-- Форма "Регистрация" -->
         <section style="display: none" class="popup">
             <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
@@ -195,3 +215,6 @@
         <!--/ Форма "Войти" -->
     </div>
     <!--/ Формы -->
+</body>
+
+</html>
