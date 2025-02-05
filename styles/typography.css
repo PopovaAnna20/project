@@ -1,5 +1,8 @@
 /* Кнопки */
 .button {
+    min-height: 60px;
+    padding: 12px 20px;
+
     font-size: 18px;
     font-weight: 600;
     line-height: 28pt;
@@ -12,6 +15,13 @@
     
     cursor: pointer; 
 
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+
+.button:hover,
+.button:focus {
+    color: #ffffff;
+    background-color: rgb(146, 237, 255);
 }
 
 .button_main {
@@ -20,9 +30,9 @@
     line-height: 28pt;
     text-align: center;
 
-    border: 1px solid #000000;
+    border: 5px solid rgb(241, 222, 17);
     border-radius: 45px;
-    background-color: rgb(252, 240, 100);
+    background-color: rgb(247, 242, 186);
     color: black;
     width: 300px ;
     height: 70px;
@@ -32,9 +42,16 @@
     min-height: 60px;
     padding: 12px 20px;
 
-    display: flex;
+    display: block;
     margin: 0 auto;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    transition: background-color 0.3s ease;
 }
+
+.button_main:hover {
+    background-color: rgb(252, 240, 100);
+    }
 
 .button--accent {
     color: rgb(0, 0, 0);
@@ -42,13 +59,32 @@
     background-color: rgb(146, 237, 255);
 }
 
-.button--link {
-  text-decoration: underline;
-  text-decoration-style: dashed;
-  text-underline-offset: 8px;
+.button--accent:hover,
+.button--accent:focus {
+    color: rgb(139, 139, 243);
+    background-color: #ffffff;
+}
 
-  border: none;
-  background-color: transparent;
+.button--link {
+    width: fit-content;
+    margin: 0 auto;
+
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 8px;
+
+    border: none;
+    background-color: transparent;
+
+    transition: text-decoration-color 0.3s;
+}
+
+.button--link:hover,
+.button--link:focus {
+    color: #a0cefc;
+    background-color: #ffffff;
+
+    text-decoration-color: transparent;
 }
 
 /* Формы */

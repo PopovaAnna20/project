@@ -1,5 +1,13 @@
 /* Блок преимуществ */
 
+.our-advantages {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .our-advantages__title {
     text-align: center;
     font-size: 40px;
@@ -12,11 +20,14 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 25px;
+    box-shadow: 1px 2px 10px 5px rgb(165, 210, 194);
 }
 
 .our-advantages__item {
     margin-top: 0;
     margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     text-align: center;
 
@@ -26,6 +37,21 @@
     color: black;
     box-shadow: 1px 2px 20px 5px #aaaaaa;
     border-radius: 25px;
+    transition: background-color 0.3s ease-out;
+    
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
+}
+
+.our-advantages__item:hover {
+    top: 10px;
+}
+
+.our-advantages__item:hover {
+   background-color: rgb(197, 250, 224);
+   box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+   0 24px 46px var(--box-shadow-color);
 }
 
 .our-advantages__list {
@@ -40,6 +66,14 @@
 /* Блок преимуществ */
 
 /* Блок услуг */
+
+.popular-services {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 .popular-services__title {
     text-align: center;
     font-size: 40px;
@@ -51,11 +85,14 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 25px;
+    box-shadow: 1px 2px 10px 5px rgb(165, 210, 194);
 }
 
 .popular-services_item {
     margin-top: 0;
     margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     text-align: center;
 
@@ -65,7 +102,16 @@
     color: black;
     box-shadow: 1px 2px 20px 5px #aaaaaa;
     border-radius: 25px;
+
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
 }
+
+.popular-services_item:hover {
+    top: 10px
+}
+
 
 .popular-services__title-card {
     margin-top: 15px;
@@ -89,11 +135,20 @@
  width: 100%;
  height: 200px;
  object-fit: cover;   
+ border-radius: 20px;
 }
 
 /* Блок услуг */
 
 /* Блок акций */
+
+.stocks {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
 .stocks__title {
     text-align: center;
@@ -106,6 +161,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 25px;
+    box-shadow: 1px 2px 10px 5px rgb(165, 210, 194);
 }
 
 .stocks__list {
@@ -116,9 +172,8 @@
     flex-wrap: wrap;
     list-style-type: none;   
     justify-content: space-between;
-
-    
 }
+
 .stocks__image {
     width: 250px;
     border-radius: 25px;
@@ -127,16 +182,35 @@
     
     margin: 0;
     padding: 20px 10;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    
+
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
 }
+
+.stocks__image:hover {
+top: 10px;
+}
+
 /* Блок акций */
 
 /* Блок новостей */
 
+.reviews {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .reviews__title {
+    margin: 20px;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
@@ -147,19 +221,35 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 25px;
+    box-shadow: 1px 2px 10px 5px rgb(165, 210, 194);
 }
 
 .item-reviews__text {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 20px;
-    text-align: center;
-
-    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 450px;
     padding: 20px;
     background-color: rgb(249, 255, 250);
     color: black;
     box-shadow: 1px 2px 20px 5px #aaaaaa;
+    border-radius: 25px;
+
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
+}
+
+.item-reviews__text:hover {
+    top: 10px;
+}
+
+.item-reviews__wrapper{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
 }
 
 .reviews__name {
@@ -175,20 +265,35 @@
     padding: 20px 10;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-between;
 }
 
+.reviews__content {
+    font-size: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
 .reviews__image {
-    width: 100%;
-    height: 200px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
+    border-radius: 100px;
 }
 
 /* Блок новостей */
 
 /* Блок новостей */
+
+.news {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .news__title {
     text-align: center;
     font-size: 40px;
@@ -200,19 +305,30 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 25px;
+    box-shadow: 1px 2px 10px 5px rgb(165, 210, 194);
 }
 
 .news__item {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 20px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
 
-    width: 350px;
+    width: 400px;
     padding: 20px;
     background-color: rgb(249, 255, 250);
-    color: black;
+   
     box-shadow: 1px 2px 20px 5px #aaaaaa;
+    border-radius: 25px;
+
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
+}
+
+.news__item:hover {
+    top: 10px;
 }
 
 .news__list {
@@ -220,25 +336,66 @@
     padding: 20px 10;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-between;
 }
 
+.item-news__title {
+    margin: 0%;
+    font-size: 20px;
+    text-align: center; 
+    color: black;
+    font-style:italic;
+}
+
+.news__item-text {
+    margin: 10px;
+    font-size: 19px;
+    text-align: center; 
+    color: black;
+    font-style: normal;
+}
+
+.item-news__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;   
+    border-radius: 20px;    
+}
+
 .item-news_link {
-    display: block;
     padding: 10px;
-    background-color: rgb(172, 218, 249);
-    color: rgb(0, 0, 0);
+    display: block;
     text-decoration: none;
     text-align: center;
     font-style: italic;
+
+    margin: 15px;
+
+    background-color: rgb(172, 218, 249);
+    color: rgb(0, 0, 0);  
+    border: 5px solid rgb(85, 183, 249);
+    border-radius: 20px;
+
+    transition: background-color 0.3s ease;
 }
+
+.item-news_link:hover {
+    background-color: rgb(216, 239, 254);
+    }
 
 
 /* Блок новостей */
 
 /* Блок врачей */
+
+.doctors {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
 .doctors__title {
     text-align: center;
@@ -251,11 +408,14 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 25px;
+    box-shadow: 1px 2px 10px 5px rgb(165, 210, 194);
 }
 
 .doctors__card{
     margin-top: 0;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     text-align: center;
 
@@ -264,7 +424,16 @@
     background-color: rgb(249, 255, 250);
     color: black;
     box-shadow: 1px 2px 20px 5px #aaaaaa;
+    border-radius: 25px;
+
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
    }
+
+.doctors__card:hover {
+    top: 10px;
+}
 
    .doctors_list {
     margin: 0;

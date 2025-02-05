@@ -13,6 +13,8 @@ body {
     background-color: #ffffff;
 
     overflow-x: hidden;
+    
+    scroll-behavior: smooth;
 }
 img {
     display: block;
@@ -38,7 +40,9 @@ img {
 }
 
 .container {
+    position: relative;
+
     width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 0 15px;
 }
