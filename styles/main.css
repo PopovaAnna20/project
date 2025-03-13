@@ -223,12 +223,29 @@ top: 10px;
     border-radius: 25px;
     box-shadow: 1px 2px 10px 5px rgb(165, 210, 194);
 }
+.reviews__wrap {
+    display: flex;
+    overflow: hidden;
+}
+
+.reviews__list {
+    width: 1350px;
+    margin: 20px;
+    margin-left: 0 px;
+    margin-right: 0 px;
+    padding: 20px 10;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: space-between;
+    overflow: hidden;
+}
 
 .item-reviews__text {
-    margin-top: 0;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     
     width: 450px;
     padding: 20px;
@@ -260,15 +277,6 @@ top: 10px;
     font-weight: bold;
 }
 
-.reviews__list {
-    margin: 0;
-    padding: 20px 10;
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    justify-content: space-between;
-}
-
 .reviews__content {
     font-size: 20px;
     text-align: justify;
@@ -280,6 +288,47 @@ top: 10px;
     height: 80px;
     object-fit: cover;
     border-radius: 100px;
+}
+
+.reviews__button-left {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 45px;
+    background-color: rgb(247, 242, 186);
+    width: 50px ;
+    height: 50px;
+    
+    cursor: pointer; 
+
+    display: block;  
+    transform: rotate(-180deg);
+    margin: 0 px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.reviews__button-left:hover {
+    background-color: rgb(250, 247, 208);  
+}
+
+.reviews__button-right {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 45px;
+    background-color: rgb(247, 242, 186);
+    width: 50px ;
+    height: 50px;
+    
+    cursor: pointer; 
+
+    display: block;
+    margin: 0 px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.reviews__button-right:hover {
+    background-color: rgb(250, 247, 208);  
 }
 
 /* Блок новостей */

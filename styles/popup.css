@@ -10,7 +10,7 @@
     background-color: rgba(58, 60, 65, 0.25);
 }
 
-.popup {
+.dialog__content {
     position: absolute;
     top: 50%;
     left: 50%;

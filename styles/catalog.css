@@ -16,11 +16,167 @@
     margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
+    
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
 }
-
+.therapy__table{
+    width: 100%;
+}
+.therapy:hover {
+    top: 5px;
+}
 .therapy__name {
     text-align: left;
     font-size: 27px;
 }
+
+.therapy__colum {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.therapy__row {
+    font-size: 30;
+    color: rgb(71, 68, 68);
+
+    transition: color-change 1s infinite;
+}
+
+.therapy__row:hover {
+    color: rgb(0, 0, 0);
+}
+
+.dermatology {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
+
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
+}
+
+.dermatology__table{
+    width: 100%;
+}
+
+.dermatology:hover {
+    top: 5px;
+}
+
+.dermatology__name {
+    text-align: left;
+    font-size: 27px;
+}
+
+.dermatology__colum {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.dermatology__row {
+    font-size: 30;
+    color: rgb(71, 68, 68);
+    transition: color-change 1s infinite;
+}
+
+.dermatology__row:hover {
+    color: rgb(0, 0, 0);
+}
+
+.surgery {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
+
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
+}
+
+.surgery__table {
+    width: 100%;
+}
+
+.surgery:hover {
+    top: 5px;
+}
+
+.surgery__name {
+    text-align: left;
+    font-size: 27px;
+}
+
+.surgery__colum {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.surgery__row {
+    font-size: 30;
+    color: rgb(71, 68, 68);
+
+    transition: color-change 1s infinite;
+}
+
+.surgery__row:hover {
+    color: rgb(0, 0, 0);
+}
+
+.blood-bank {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
+
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear;
+}
+
+.blood-bank__table{
+    width: 100%;
+}
+
+.blood-bank:hover {
+    top: 5px;
+}
+
+.blood-bank__name {
+    text-align: left;
+    font-size: 27px;
+}
+
+.blood-bank__colum {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.blood-bank__row {
+    font-size: 30;
+    color: rgb(71, 68, 68);
+
+    transition: color-change 1s infinite;
+}
+
+.blood-bank__row:hover {
+    color: rgb(0, 0, 0);
+}
+

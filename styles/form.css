@@ -22,14 +22,28 @@
     align-self: flex-start;
     width: 100%;
     padding: 10px 26px;
-
+    
     font-size: 16px;
     line-height: 28px;
+    
+    border-radius: 16px;
+    border: 1px solid rgba(145, 150, 161, 0.4);
+    background-color: transparent;
+    
+    outline: 1px solid transparent;
+
+    transition: outline-color 0.3s ease-out, border-color 0.3s ease-out;
 }
 
 .form__field::placeholder {
     color: #25292D;
     opacity: 0.5;
+}
+
+.form__field:focus {
+    border-color: transparent;
+
+    outline-color: #04579f;
 }
 
 .form__field-alert {
