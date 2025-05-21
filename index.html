@@ -5,189 +5,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ветеринарная клиника</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <h1 class="visually-hidden">Главная страница нашего сайта</h1>
-    <header class="header container">
-        <a class="header__logo-wrap" href="index.html">
-            <img class="header__logo" src="images/logotip.png" alt="Логотип" width="100" height="100">
-            <h1 class="header__title"> ВетАльянс</h1>
-        </a>
-        <nav class="header__nav">
-            <ol class="header__list">
-                <li class="header__item"><a class="header__item-link header__item-link--active"
-                        href="index.html">Главная</a></li>
-                <li class="header__item"><a class="header__item-link" href="catalog.html">Услуги</a></li>
-                <li class="header__item"><a class="header__item-link" href="reviews.html">Отзывы</a></li>
-                <li class="header__item"><a class="header__item-link" href="our-experts.html">Наши эксперты</a></li>
-                <li class="header__item"><a class="header__item-link" href="discounts.html">Скидки</a></li>
-                <li class="header__item"><a class="header__item-link" href="price-list.html">Прайс лист</a></li>
-                <li class="header__item"><a class="header__item-link" href="about-us.html">О нас</a></li>
-                <li class="header__item"><a class="header__item-link" href="contacts.html">Контакты</a></li>
-            </ol>
-        </nav>
-        <!--/ Навигация -->
-        <button class="header__login" type="button">
-            <span class="header__login-text">Войти</span>
-        </button>
-    </header>
-    <!--Основной контент -->
-    <main class="main container">
-        <!--Первая секция -->
-        <section class="our-advantages">
-            <h2 class="our-advantages__title">Наши преимущества</h2>
-            <ul class="our-advantages__list">
-                <li class="our-advantages__item">Высококлассные врачи</li>
-                <li class="our-advantages__item">Точная диагностика</li>
-                <li class="our-advantages__item">Стационарное лечение</li>
-                <li class="our-advantages__item">Проведение тяжелых операций</li>
-                <li class="our-advantages__item">Собственная лаборатория</li>
-                <li class="our-advantages__item">Ветеринарная скорая</li>
-            </ul>
-        </section>
-        <!--Вторая секция -->
-        <section class="popular-services" id="service cards">
-            <h2 class="popular-services__title">Популярные услуги</h2>
-            <ul class="popular-services__list">
-                <li class="popular-services_item">
-                    <div class="popular-services_div">
-                        <h3 class="popular-services__title-card">Узи кошек и собак</h3>
-                        <p class="popular-services_text"> от 450 рублей</p>
-                        <img class="popular-services__image" src="images/usluga1.webp" width="350" height="200"
-                            alt="Узи">
-                    </div>
-                </li>
-                <li class="popular-services_item">
-                    <div class="popular-services_div">
-                        <h3 class="popular-services__title-card">Вакцинация</h3>
-                        <p class="popular-services_text"> от 1230 рублей</p>
-                        <img class="popular-services__image" src="images/usluga2.webp" width="350" height="200"
-                            alt="Вакцинация">
-                    </div>
-                </li>
-                <li class="popular-services_item">
-                    <div class="popular-services_div">
-                        <h3 class="popular-services__title-card">Кастрация и стирилизация</h3>
-                        <p class="popular-services_text"> от 1750 рублей</p>
-                        <img class="popular-services__image" src="images/usluga3.avif" width="350" height="200"
-                            alt="Кастрация и стерилизация">
-                    </div>
-                </li>
-            </ul>
-            <button class="button_main" type="button">Смотреть все услуги и цены</button>
-        </section>
-        <!--Третья секция -->
-        <section class="stocks">
-            <h2 class="stocks__title">Акции</h2>
-            <div class="stocks__list">
-                <img class="stocks__image" src="images/skitka1.png" width="200" height="387"
-                    alt="Скидка -25% на груминг">
-                <img class="stocks__image" src="images/skitka2.png" width="200" height="387" alt="Скидка с 13 до 16:00">
-                <img class="stocks__image" src="images/skitka3.png" width="200" height="387" alt="Первый груминг -30%">
-                <img class="stocks__image" src="images/skitka4.png" width="200" height="387"
-                    alt="Скидки на первичный прием">
-            </div>
-        </section>
-        <!--Четвертая секция -->
-        <section class="reviews" id="reviews">
-            <h2 class="reviews__title">Отзывы</h2>
-            <div class="reviews__wrap">
-                <button class="reviews__button-left"> <img class="reviews__image-button"
-                        src="images/icon/arrow-left.svg" width="50" height="50" alt="Стрелка влево"></button>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
 
-                <ul class="reviews__list">
+    <div class="content">
 
-                    <li class="item-reviews__text">
-                        <div class="item-reviews__wrapper">
-                            <img class="reviews__image" src="images/feedback1.png" width="100" height="200"
-                                alt="Аватарка критика 1">
-                            <h3 class="reviews__name">Ксенья Г</h3>
-                        </div>
-                        <div class="item-reviews__div">
-                            <p class="reviews__content">Уже дважды обращались в клинику с морскими свинками. Врач у нас
-                                был...</p>
-                            <a class="reviews__link" href="about-us.html">Читать полностью</a>
-                        </div>
-                    </li>
-
-                    <li class="item-reviews__text">
-                        <div class="item-reviews__wrapper">
-                            <img class="reviews__image" src="images/feedback2.png" width="100" height="200"
-                                alt="Аватарка критика 2">
-                            <h3 class="reviews__name">Елена Л.</h3>
-                        </div>
-                        <div class="item-reviews__div">
-                            <p class="reviews__content">Хочу выразить огромную благодарность замечательному врачу...</p>
-                            <a class="reviews__link" href="about-us.html">Читать полностью</a>
-                        </div>
-                    </li>
-
-                    <li class="item-reviews__text">
-                        <div class="item-reviews__wrapper">
-                            <img class="reviews__image" src="images/feedback3.png" width="100" height="200"
-                                alt="Аватарка критика 3">
-                            <h3 class="reviews__name">Екатерина П.</h3>
-                        </div>
-                        <div class="item-reviews__div">
-                            <p class="reviews__content">Круглосуточная ветеринарная клиника, вежливый персонал...</p>
-                            <a class="reviews__link" href="about-us.html">Читать полностью</a>
-                        </div>
-                    </li>
-
-                    <li class="item-reviews__text">
-                        <div class="item-reviews__wrapper">
-                            <img class="reviews__image" src="images/feedback4.png" width="100" height="200"
-                                alt="Аватарка критика 4">
-                            <h3 class="reviews__name">Евгения Ш.</h3>
-                        </div>
-                        <div class="item-reviews__div">
-                            <p class="reviews__content">Хочу выразить огромную благодарность за профессионализм...</p>
-                            <a class="reviews__link" href="about-us.html">Читать полностью</a>
-                        </div>
-                    </li>
-
-                    <li class="item-reviews__text">
-                        <div class="item-reviews__wrapper">
-                            <img class="reviews__image" src="images/feedback5.png" width="100" height="200"
-                                alt="Аватарка критика 5">
-                            <h3 class="reviews__name">Любовь А.</h3>
-                        </div>
-                        <div class="item-reviews__div">
-                            <p class="reviews__content">Наша собака недавно перенесла операцию, и я не могу не
-                                отметить...</p>
-                            <a class="reviews__link" href="about-us.html">Читать полностью</a>
-                        </div>
-                    </li>
-
-                    <li class="item-reviews__text">
-                        <div class="item-reviews__wrapper">
-                            <img class="reviews__image" src="images/feedback6.png" width="100" height="200"
-                                alt="Аватарка критика 6">
-                            <h3 class="reviews__name">Евгений Р.</h3>
-                        </div>
-                        <div class="item-reviews__div">
-                            <p class="reviews__content">Недавно посетили "ВетАльянс" и остались в полном восторге!...
-                            </p>
-                            <a class="reviews__link" href="about-us.html">Читать полностью</a>
-                        </div>
-                    </li>
-
+        <h1 class="visually-hidden">Главная страница нашего сайта</h1>
+        <header class="header container">
+            <a class="header__logo-wrap" href="index.html">
+                <img class="header__logo" src="images/logotip.png" alt="Логотип" width="100" height="100">
+                <h1 class="header__title"> ВетАльянс</h1>
+            </a>
+            <nav class="header__nav">
+                <ol class="header__list">
+                    <li class="header__item"><a class="header__item-link header__item-link--active"
+                            href="index.html">Главная</a></li>
+                    <li class="header__item"><a class="header__item-link" href="catalog.html">Услуги</a></li>
+                    <li class="header__item"><a class="header__item-link" href="reviews.html">Отзывы</a></li>
+                    <li class="header__item"><a class="header__item-link" href="our-experts.html">Наши эксперты</a></li>
+                    <li class="header__item"><a class="header__item-link" href="discounts.html">Скидки</a></li>
+                    <li class="header__item"><a class="header__item-link" href="price-list.html">Прайс лист</a></li>
+                    <li class="header__item"><a class="header__item-link" href="about-us.html">О нас</a></li>
+                    <li class="header__item"><a class="header__item-link" href="contacts.html">Контакты</a></li>
+                </ol>
+            </nav>
+            <!--/ Навигация -->
+            <button class="header__login" type="button">
+                <span class="header__login-text">Войти</span>
+            </button>
+        </header>
+        <!--Основной контент -->
+        <main class="main container">
+            <!--Первая секция -->
+            <section class="our-advantages">
+                <h2 class="our-advantages__title">Наши преимущества</h2>
+                <ul class="our-advantages__list">
+                    <li class="our-advantages__item">Высококлассные врачи</li>
+                    <li class="our-advantages__item">Точная диагностика</li>
+                    <li class="our-advantages__item">Стационарное лечение</li>
+                    <li class="our-advantages__item">Проведение тяжелых операций</li>
+                    <li class="our-advantages__item">Собственная лаборатория</li>
+                    <li class="our-advantages__item">Ветеринарная скорая</li>
                 </ul>
-                <button class="reviews__button-right"> <img class="reviews__image-button"
-                        src="images/icon/arrow-right.svg" width="30" height="30" alt="Стрелка влево"></button>
+            </section>
+            <!--Вторая секция -->
+            <section class="popular-services" id="service-cards">
+                <h2 class="popular-services__title">Популярные услуги</h2>
+                <ul class="popular-services__list">
+                    <li class="popular-services_item">
+                        <div class="popular-services_div">
+                            <h3 class="popular-services__title-card">Узи кошек и собак</h3>
+                            <p class="popular-services_text"> от 450 рублей</p>
+                            <img class="popular-services__image" src="images/usluga1.webp" width="350" height="200"
+                                alt="Узи">
+                        </div>
+                    </li>
+                    <li class="popular-services_item">
+                        <div class="popular-services_div">
+                            <h3 class="popular-services__title-card">Вакцинация</h3>
+                            <p class="popular-services_text"> от 1230 рублей</p>
+                            <img class="popular-services__image" src="images/usluga2.webp" width="350" height="200"
+                                alt="Вакцинация">
+                        </div>
+                    </li>
+                    <li class="popular-services_item">
+                        <div class="popular-services_div">
+                            <h3 class="popular-services__title-card">Кастрация и стирилизация</h3>
+                            <p class="popular-services_text"> от 1750 рублей</p>
+                            <img class="popular-services__image" src="images/usluga3.avif" width="350" height="200"
+                                alt="Кастрация и стерилизация">
+                        </div>
+                    </li>
+                </ul>
+                <button class="button_main" type="button">Смотреть все услуги и цены</button>
+            </section>
+            <!--Третья секция -->
+            <section class="stocks">
+                <h2 class="stocks__title">Акции</h2>
+                <div class="stocks__list">
+                    <img class="stocks__image" src="images/skitka1.png" width="200" height="387"
+                        alt="Скидка -25% на груминг">
+                    <img class="stocks__image" src="images/skitka2.png" width="200" height="387"
+                        alt="Скидка с 13 до 16:00">
+                    <img class="stocks__image" src="images/skitka3.png" width="200" height="387"
+                        alt="Первый груминг -30%">
+                    <img class="stocks__image" src="images/skitka4.png" width="200" height="387"
+                        alt="Скидки на первичный прием">
+                </div>
+            </section>
+            <!--Четвертая секция -->
+            <section class="reviews" id="reviews">
+                <h2 class="reviews__title">Отзывы</h2>
+                <div class="reviews__wrap">
+                    <button class="reviews__button-left"> <img class="reviews__image-button"
+                            src="images/icon/arrow-left.svg" width="50" height="50" alt="Стрелка влево"></button>
 
-            </div>
-            <button class="button_main" type="button">Смотреть все отзывы</button>
-        </section>
-        <!--Пятая секция -->
-        <section class="news">
-            <h2 class="news__title">Новости</h2>
-            <ul class="news__list">
-                <li class="news__item item_news">
-                    <h3 class="item-news__title">Дни рождения клиники</h3>
+                    <ul class="reviews__list">
+
+                        <li class="item-reviews__text">
+                            <div class="item-reviews__wrapper">
+                                <img class="reviews__image" src="images/feedback1.png" width="100" height="200"
+                                    alt="Аватарка критика 1">
+                                <h3 class="reviews__name">Ксенья Г</h3>
+                            </div>
+                            <div class="item-reviews__div">
+                                <p class="reviews__content">Уже дважды обращались в клинику с морскими свинками. Врач у
+                                    нас
+                                    был...</p>
+                                <a class="reviews__link" href="about-us.html">Читать полностью</a>
+                            </div>
+                        </li>
+
+                        <li class="item-reviews__text">
+                            <div class="item-reviews__wrapper">
+                                <img class="reviews__image" src="images/feedback2.png" width="100" height="200"
+                                    alt="Аватарка критика 2">
+                                <h3 class="reviews__name">Елена Л.</h3>
+                            </div>
+                            <div class="item-reviews__div">
+                                <p class="reviews__content">Хочу выразить огромную благодарность замечательному врачу...
+                                </p>
+                                <a class="reviews__link" href="about-us.html">Читать полностью</a>
+                            </div>
+                        </li>
+
+                        <li class="item-reviews__text">
+                            <div class="item-reviews__wrapper">
+                                <img class="reviews__image" src="images/feedback3.png" width="100" height="200"
+                                    alt="Аватарка критика 3">
+                                <h3 class="reviews__name">Екатерина П.</h3>
+                            </div>
+                            <div class="item-reviews__div">
+                                <p class="reviews__content">Круглосуточная ветеринарная клиника, вежливый персонал...
+                                </p>
+                                <a class="reviews__link" href="about-us.html">Читать полностью</a>
+                            </div>
+                        </li>
+
+                        <li class="item-reviews__text">
+                            <div class="item-reviews__wrapper">
+                                <img class="reviews__image" src="images/feedback4.png" width="100" height="200"
+                                    alt="Аватарка критика 4">
+                                <h3 class="reviews__name">Евгения Ш.</h3>
+                            </div>
+                            <div class="item-reviews__div">
+                                <p class="reviews__content">Хочу выразить огромную благодарность за профессионализм...
+                                </p>
+                                <a class="reviews__link" href="about-us.html">Читать полностью</a>
+                            </div>
+                        </li>
+
+                        <li class="item-reviews__text">
+                            <div class="item-reviews__wrapper">
+                                <img class="reviews__image" src="images/feedback5.png" width="100" height="200"
+                                    alt="Аватарка критика 5">
+                                <h3 class="reviews__name">Любовь А.</h3>
+                            </div>
+                            <div class="item-reviews__div">
+                                <p class="reviews__content">Наша собака недавно перенесла операцию, и я не могу не
+                                    отметить...</p>
+                                <a class="reviews__link" href="about-us.html">Читать полностью</a>
+                            </div>
+                        </li>
+
+                        <li class="item-reviews__text">
+                            <div class="item-reviews__wrapper">
+                                <img class="reviews__image" src="images/feedback6.png" width="100" height="200"
+                                    alt="Аватарка критика 6">
+                                <h3 class="reviews__name">Евгений Р.</h3>
+                            </div>
+                            <div class="item-reviews__div">
+                                <p class="reviews__content">Недавно посетили "ВетАльянс" и остались в полном
+                                    восторге!...
+                                </p>
+                                <a class="reviews__link" href="about-us.html">Читать полностью</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <button class="reviews__button-right"> <img class="reviews__image-button"
+                            src="images/icon/arrow-right.svg" width="30" height="30" alt="Стрелка влево"></button>
+
+                </div>
+                <button class="button_main" type="button">Смотреть все отзывы</button>
+            </section>
+            <!--Пятая секция -->
+            <section class="news" id="cards">
+                <h2 class="news__title">Новости</h2>
+                <ul class="news__list">
+               <!--  <li class="news__item item_news">
+                    <h3 class="item-news__title">Заголовок 1</h3>
                     <div class="item-news__text">
                         <p class="news__item-text"> 25 марта наша клиника празднует день рождения</p>
                         <img class="item-news__image" src="images/happy-birthday.png" width="300" height="200"
@@ -196,7 +210,7 @@
                     </div>
                 </li>
                 <li class="news__item item_news">
-                    <h3 class="item-news__title">Наша учеба</h3>
+                    <h3 class="item-news__title">Заголовок 2</h3>
                     <div class="item-news__text">
                         <p class="news__item-text"> Галина Семеновна начала проходить дополнительные курсы</p>
                         <img class="item-news__image" src="images/courses.png" width="300" height="200"
@@ -205,129 +219,140 @@
                     </div>
                 </li>
                 <li class="news__item item_news">
-                    <h3 class="item-news__title">Приглашаем студентов на практику</h3>
+                    <h3 class="item-news__title">Заголовок 3</h3>
                     <div class="item-news__text">
                         <p class="news__item-text"> Не знаете где пройти практику? Мы поможем вам с выбором!</p>
                         <img class="item-news__image" src="images/practice.png" width="300" height="200"
                             alt="Практика студентов">
                         <a class="item-news_link" href="#"> Читать дальше</a>
                     </div>
-                </li>
+                </li> -->
             </ul>
-            <button class="button_main" type="button">Смотреть все новости клиники</button>
-        </section>
-        <!--Шестая секция -->
-        <section class="doctors">
-            <h2 class="doctors__title"> Наши ветеринарные врачи</h2>
-            <ul class="doctors_list">
-                <li class="doctors__card">
-                    <img class="doctors__image" src="images/vet1.png" width="200" height="300" alt="Фото 1 врача">
-                    <p class="doctors__name"> Зубарева Галина Сергеевна</p>
-                </li>
-
-                <li class="doctors__card">
-                    <img class="doctors__image" src="images/vet2.png" width="200" height="300" alt="Фото 2 врача">
-                    <p class="doctors__name"> Захарова Светлана Петровна</p>
-                </li>
-
-                <li class="doctors__card">
-                    <img class="doctors__image" src="images/vet3.png" width="200" height="300" alt="Фото 3 врача">
-                    <p class="doctors__name"> Носкова Лидия Анатольевна</p>
-                </li>
-
-                <li class="doctors__card">
-                    <img class="doctors__image" src="images/vet4.jpg" width="200" height="300" alt="Фото 4 врача">
-                    <p class="doctors__name"> Смирнов Андрей Васильевич</p>
-                </li>
-
-                <li class="doctors__card">
-                    <img class="doctors__image" src="images/vet5.jpg" width="200" height="300" alt="Фото 5 врача">
-                    <p class="doctors__name"> Чечель Светлана Геннадьевна</p>
-                </li>
-
-            </ul>
-
-            <button class="button_main" type="button">Посмотреть всех врачей</button>
-
-        </section>
-
-    </main>
-
-    <footer class="footer container">
-        <div class="footer__section">
-            <h1 class="footer__title"> ВетАльянс</h1>
-            <p class="footer__section-text">Сайт создан Поповой Анной Сергеевной и Фёдоровой Анной Михайловной группа
-                ВТ-21</p>
-        </div>
-
-        <div class="footer__section">
-            <ul class="footer__list">
-                <li class="footer__item"> <a class="footer__item-link" href="#">Пользовательское соглашение</a></li>
-                <li class="footer__item"> <a class="footer__item-link" href="#">Политика конфиденциальности</a></li>
-            </ul>
-        </div>
-
-        <div class="footer__section">
-            <a class="section__link" href="#">Телеграм</a>
-            <a class="section__link" href="#">Телефон</a>
-            <a class="section__link" href="#">Email</a>
-        </div>
-    </footer>
-    <!-- Формы -->
-    <div class="dialog dialog--layout" hidden>
-        <div class="dialog__content">
-            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
-                    height="24"></button>
-            <!-- Форма "Войдите в профиль" -->
-            <section class="popup" id="popup-select">
-                <h2 class="popup__title">Войдите в профиль</h2>
-                <p class="popup__desc">Вносить информацию могут только зарегистрированные пользователи.</p>
-                <div class="popup__buttons">
-                    <button class="button button--accent" type="button" data-login>Войти</button>
-                    <button class="button" type="button" data-registration>Регистрация</button>
-                </div>
+                <button class="button_main" type="button">Смотреть все новости клиники</button>
             </section>
-            <!--/ Форма "Войдите в профиль" -->
-            <!-- Форма "Регистрация" -->
-            <section class="popup" id="popup-registration" hidden>
-                <h2 class="popup__title popup__title--registration">Регистрация</h2>
-                <form class="popup__form form" action="/" method="post">
-                    <input class="form__field" type="text" name="name" placeholder="Имя" required>
-                    <input class="form__field" type="email" name="email" placeholder="Логин" required>
-                    <fieldset class="form__fieldset">
-                        <div class="form__field-block">
-                            <input class="form__field" type="password" name="password" placeholder="Пароль" required>
-                            <span class="form__field-alert">Минимум 8 символов</span>
-                        </div>
-                        <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
-                            required>
-                    </fieldset>
-                    <fieldset class="form__buttons">
-                        <button class="button button--accent" type="submit">Зарегистрироваться</button>
-                        <button class="button" type="button">Отмена</button>
-                    </fieldset>
-                    <button class="button button--link" type="button">У меня уже есть аккаунт</button>
-                </form>
+            <!--Шестая секция -->
+            <section class="doctors card card--slider swiper">
+                <h2 class="doctors__title"> Наши ветеринарные врачи</h2>
+                <ul class="doctors_list card__list--slider swiper-wrapper">
+                    <li class="doctors__card swiper-slide">
+                        <img class="doctors__image" src="images/vet1.png" width="200" height="300" alt="Фото 1 врача">
+                        <p class="doctors__name"> Зубарева Галина Сергеевна</p>
+                    </li>
+
+                    <li class="doctors__card swiper-slide">
+                        <img class="doctors__image" src="images/vet2.png" width="200" height="300" alt="Фото 2 врача">
+                        <p class="doctors__name"> Захарова Светлана Петровна</p>
+                    </li>
+
+                    <li class="doctors__card swiper-slide">
+                        <img class="doctors__image" src="images/vet3.png" width="200" height="300" alt="Фото 3 врача">
+                        <p class="doctors__name"> Носкова Лидия Анатольевна</p>
+                    </li>
+
+                    <li class="doctors__card swiper-slide">
+                        <img class="doctors__image" src="images/vet4.jpg" width="200" height="300" alt="Фото 4 врача">
+                        <p class="doctors__name"> Смирнов Андрей Васильевич</p>
+                    </li>
+
+                    <li class="doctors__card swiper-slide">
+                        <img class="doctors__image" src="images/vet5.jpg" width="200" height="300" alt="Фото 5 врача">
+                        <p class="doctors__name"> Чечель Светлана Геннадьевна</p>
+                    </li>
+
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <button class="button_main" type="button">Посмотреть всех врачей</button>
+
             </section>
-            <!--/ Форма "Регистрация" -->
-            <!-- Форма "Войти" -->
-            <section class="popup" id="popup-login" hidden>
-                <h2 class="popup__title">Войти</h2>
-                <form class="popup__form form" action="/" method="post">
-                    <input class="form__field" type="email" name="email" placeholder="Логин" required>
-                    <input class="form__field" type="password" name="password" placeholder="Пароль" required>
-                    <fieldset class="form__buttons">
-                        <button class="button button--accent" type="submit">Войти</button>
-                        <button class="button" type="button">Отмена</button>
-                    </fieldset>
-                    <button class="button button--link" type="button">У меня еще нет аккаунта</button>
-                </form>
-            </section>
-            <!--/ Форма "Войти" -->
+
+        </main>
+
+        <footer class="footer container">
+            <div class="footer__section">
+                <h1 class="footer__title"> ВетАльянс</h1>
+                <p class="footer__section-text">Сайт создан Поповой Анной Сергеевной и Фёдоровой Анной Михайловной группа ВТ-21</p>
+            </div>
+
+            <div class="footer__section">
+                <ul class="footer__list">
+                    <li class="footer__item"> <a class="footer__item-link" href="#">Пользовательское соглашение</a></li>
+                    <li class="footer__item"> <a class="footer__item-link" href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <a class="section__link" href="#">Телеграм</a>
+                <a class="section__link" href="#">Телефон</a>
+                <a class="section__link" href="#">Email</a>
+            </div>
+        </footer>
+
+        <!-- Формы -->
+        <div class="dialog dialog--layout" hidden>
+            <div class="dialog__content">
+                <button class="popup__close" type="button" data-close><img src="images/icon/close.svg"
+                        alt="Закрыть окно" width="24" height="24"></button>
+                <!-- Форма "Войдите в профиль" -->
+                <section class="popup" id="popup-select">
+                    <h2 class="popup__title">Войдите в профиль</h2>
+                    <p class="popup__desc">Вносить информацию могут только зарегистрированные пользователи.</p>
+                    <div class="popup__buttons">
+                        <button class="button button--accent" type="button" data-login>Войти</button>
+                        <button class="button" type="button" data-registration>Регистрация</button>
+                    </div>
+                </section>
+                <!--/ Форма "Войдите в профиль" -->
+                <!-- Форма "Регистрация" -->
+                <section class="popup" id="popup-registration" hidden>
+                    <h2 class="popup__title popup__title--registration">Регистрация</h2>
+                    <form class="popup__form form" action="/" method="post" id="registration-form">
+                        <input class="form__field" type="text" name="username" placeholder="Имя" id="username" required>
+                        <input class="form__field" type="text" name="login" placeholder="Логин" id="login" required>
+                        <input class="form__field" type="email" name="email" placeholder="Адрес электронной почты"
+                            id="email" required>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field-block">
+                                <input class="form__field" type="password" name="password" placeholder="Пароль"
+                                    id="password" required>
+                                <span class="form__field-alert">Минимум 8 символов</span>
+                            </div>
+                            <input class="form__field" type="password" name="repeat-password"
+                                placeholder="Повторите пароль" id="confirm-password" required>
+                        </fieldset>
+                        <p id="error-message" class="error-message"></p>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                            <button class="button button--close" data-close type="button">Отмена</button>
+                        </fieldset>
+                        <button class="button button--link" data-login type="button">У меня уже есть аккаунт</button>
+                    </form>
+                </section>
+                <!--/ Форма "Регистрация" -->
+                <!-- Форма "Войти" -->
+                <section class="popup" id="popup-login" hidden>
+                    <h2 class="popup__title">Войти</h2>
+                    <form class="popup__form form" action="/" method="post" id="login-form">
+                        <input class="form__field" type="text" name="login" placeholder="Логин" id="userlogin" required>
+                        <input class="form__field" type="password" name="current-password" placeholder="Пароль"
+                            id="userpassword" required>
+                        <p id="error-message-login" class="error-message"></p>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Войти</button>
+                            <button class="button button--close" data-close type="button">Отмена</button>
+                        </fieldset>
+                        <button class="button button--link" data-registration type="button">У меня еще нет
+                            аккаунта</button>
+                    </form>
+                </section>
+                <!--/ Форма "Войти" -->
+            </div>
         </div>
-    </div>
-    <!--/ Формы -->
-    <script src="js/script.js"></script>
+        <!--/ Формы -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+        <script src="js/script.js"></script>
+
 </body>
 
 </html>

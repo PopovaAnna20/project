@@ -1,0 +1,29 @@
+[
+    {
+         "title": "Дни рождения клиники",
+         "description": "25 марта наша клиника празднует день рождения",
+         "image": "images/happy-birthday.png",
+         "imageWidth": 80,
+         "imageHeight": 80,
+         "imageAlt": "C днем рождения",
+         "link": "/#/"    
+     },
+     {
+         "title": "Наша учеба",
+         "description": "Галина Семеновна начала проходить дополнительные курсы",
+         "image": "images/courses.png",
+         "imageWidth": 80,
+         "imageHeight": 80,
+         "imageAlt": "Прохождение доп.курсов",
+         "link": "/#/"   
+     },
+     {
+        "title": "Приглашаем студентов на практику",
+         "description": "Не знаете где пройти практику? Мы поможем вам с выбором!",
+         "image": "images/practice.png",
+         "imageWidth": 80,
+         "imageHeight": 80,
+         "imageAlt": "Практика студентов",
+         "link": "/#/"   
+     }
+ ]

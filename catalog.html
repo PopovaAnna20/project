@@ -177,8 +177,8 @@
     <!-- Формы -->
     <div class="dialog dialog--layout" hidden>
         <div class="dialog__content">
-            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
-                    height="24"></button>
+            <button class="popup__close" type="button" data-close><img src="images/icon/close.svg"
+                    alt="Закрыть окно" width="24" height="24"></button>
             <!-- Форма "Войдите в профиль" -->
             <section class="popup" id="popup-select">
                 <h2 class="popup__title">Войдите в профиль</h2>
@@ -192,36 +192,43 @@
             <!-- Форма "Регистрация" -->
             <section class="popup" id="popup-registration" hidden>
                 <h2 class="popup__title popup__title--registration">Регистрация</h2>
-                <form class="popup__form form" action="/" method="post">
-                    <input class="form__field" type="text" name="name" placeholder="Имя" required>
-                    <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <form class="popup__form form" action="/" method="post" id="registration-form">
+                    <input class="form__field" type="text" name="username" placeholder="Имя" id="username" required>
+                    <input class="form__field" type="text" name="login" placeholder="Логин" id="login" required>
+                    <input class="form__field" type="email" name="email" placeholder="Адрес электронной почты"
+                        id="email" required>
                     <fieldset class="form__fieldset">
                         <div class="form__field-block">
-                            <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                            <input class="form__field" type="password" name="password" placeholder="Пароль"
+                                id="password" required>
                             <span class="form__field-alert">Минимум 8 символов</span>
                         </div>
-                        <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
-                            required>
+                        <input class="form__field" type="password" name="repeat-password"
+                            placeholder="Повторите пароль" id="confirm-password" required>
                     </fieldset>
+                    <p id="error-message" class="error-message"></p>
                     <fieldset class="form__buttons">
                         <button class="button button--accent" type="submit">Зарегистрироваться</button>
-                        <button class="button" type="button">Отмена</button>
+                        <button class="button button--close" data-close type="button">Отмена</button>
                     </fieldset>
-                    <button class="button button--link" type="button">У меня уже есть аккаунт</button>
+                    <button class="button button--link" data-login type="button">У меня уже есть аккаунт</button>
                 </form>
             </section>
             <!--/ Форма "Регистрация" -->
             <!-- Форма "Войти" -->
             <section class="popup" id="popup-login" hidden>
                 <h2 class="popup__title">Войти</h2>
-                <form class="popup__form form" action="/" method="post">
-                    <input class="form__field" type="email" name="email" placeholder="Логин" required>
-                    <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                <form class="popup__form form" action="/" method="post" id="login-form">
+                    <input class="form__field" type="text" name="login" placeholder="Логин" id="userlogin" required>
+                    <input class="form__field" type="password" name="current-password" placeholder="Пароль"
+                        id="userpassword" required>
+                    <p id="error-message-login" class="error-message"></p>
                     <fieldset class="form__buttons">
                         <button class="button button--accent" type="submit">Войти</button>
-                        <button class="button" type="button">Отмена</button>
+                        <button class="button button--close" data-close type="button">Отмена</button>
                     </fieldset>
-                    <button class="button button--link" type="button">У меня еще нет аккаунта</button>
+                    <button class="button button--link" data-registration type="button">У меня еще нет
+                        аккаунта</button>
                 </form>
             </section>
             <!--/ Форма "Войти" -->
